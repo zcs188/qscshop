@@ -1,0 +1,35 @@
+body{
+	background: #F2F2F2 !important;
+}
+.search{
+	position: relative;
+	left: 15px;
+}
+.tit{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background: #fff;
+}
+.classify div.active:after{
+	content: '';
+	height: 2px;
+	width: 80%;
+	background: #669900;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+
+/*内容*/
+.cont{
+	margin-top: 101px;
+}
+.cont-list{
+	display: none;
+}
+.cont-list.active{
+	display: block;
+}

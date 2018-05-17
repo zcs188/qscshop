@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>用户中心</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/mine.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css" />
+	</head>
+	<body>
+		<div class="container-fluid mine-top">
+			<div class="row bg-fff">
+				<a href="{:U('user/information')}" style="color:#000000"><div class="col-xs-12 top padd_0">
+					<img class="user center-block img-rounded" src="{$userinfo.user_image|default='__PUBLIC__/img/person/tx.png'}"/>
+					<if condition="$userinfo['infoName'] eq ''">
+					<a href="{:U('user/login')}" style="color:green"><p class="font12 text-center username">你好,请登录</p></a>
+					<else />
+						
+					<p class="font12 text-center username">{$userinfo.infoName}&nbsp;&nbsp;&nbsp;<if condition="$infotype['userType'] eq 4">L{$infotype.userGrade}
+					<else />
+					</if><br/>
+					<if condition="$infotype['userType'] eq 1">
+					       普通会员
+					 <elseif condition="$infotype['userType'] eq 2" />  
+					      商户(企业)
+					 <elseif condition="$infotype['userType'] eq 3" />  
+					       公司内部销售人员
+					 <elseif condition="$infotype['userType'] eq 4" />  
+					     个人销售人员
+					 <elseif condition="$infotype['userType'] eq 5" />  
+					      货运师傅
+					 <elseif condition="$infotype['userType'] eq 6" />  
+					      安装工人
+					<else />
+					</if>
+					</p>
+				
+					</if>
+					<div class="float"></a>
+						<a href="{:U('user/myfoot')}"><div class="f-list text-center">
+							<img class="z" src="__PUBLIC__/img/mine/z.png"/>
+							<span class="color-fff">我的足迹</span>
+						</div></a>
+						<a href="{:U('user/address')}"><div class="f-list text-center">
+							<img class="z" src="__PUBLIC__/img/mine/d.png"/>
+							<span class="color-fff">收货地址</span>
+						</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid cont">
+			<div class="row bg-fff mar-t15">
+			<a href="{:U('user/myorder')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+					
+						<img class="order" src="__PUBLIC__/img/mine/myorder.png"/>
+						我的订单
+						<span class="color-666 font12 pull-right"> 查看全部订单 <img class="r" src="__PUBLIC__/img/huoyun/r.png"/></span>
+					
+				</div>
+				</a>
+				<div class="col-lg-12 text-center pad-up10">
+					
+			
+					<a href="{:U('user/myorder')}" style="color:#000000">
+					<div class="col-xs-3 padd_0 pad-up10">
+						<img class="pay pay1 mar-b5 center-block" src="__PUBLIC__/img/mine/a.png"/>
+						<p class="mar-b0">待付款</p>
+						<if condition="$dmoneynumber gt 0">
+						<span class="mybadge">{$dmoneynumber}</span>
+						<else />
+						</if>
+					</div>
+					</a>
+					<a href="{:U('user/myorder')}" style="color:#000000"><div class="col-xs-3 padd_0 pad-up10">
+						<img class="pay mar-b5 center-block" src="__PUBLIC__/img/mine/b.png"/>
+						<p class="mar-b0">待收货</p>
+						<if condition="$dgoodnumber gt 0">
+						<span class="mybadge">{$dgoodnumber}</span>
+						<else />
+						</if>
+					</div></a>
+					<a href="{:U('user/myorder')}" style="color:#000000"><div class="col-xs-3 padd_0 pad-up10">
+						<img class="pay mar-b5 center-block" src="__PUBLIC__/img/mine/c.png"/>
+						<p class="mar-b0">待评价</p>
+						<if condition="$dcommentnumber gt 0">
+						<span class="mybadge">{$dcommentnumber}</span>
+						<else />
+						</if>
+					</div></a>
+					<a href="{:U('user/refund')}" style="color:#000000"><div class="col-xs-3 padd_0 pad-up10">
+						<img class="pay mar-b5 pay2 center-block" src="__PUBLIC__/img/mine/d1.png"/>
+						<p class="mar-b0">退货/售后</p>
+						<if condition="$refundnumber gt 0">
+						<span class="mybadge">{$refundnumber}</span>
+						<else />
+						</if>
+					</div></a>
+				</div>
+			</div>
+			<div class="row font15 bg-fff mar-t15">
+					<a href="{:U('user/coupon')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/1.png"/>
+						<span>我的卡券</span>
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/integral')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/2.png"/>
+						我的积分
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('good/jifensc')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/3.png"/>
+						积分商城
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/lookforward')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/4.png"/>
+						积分抽奖
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/invitefriends')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/5.png"/>
+						邀请好友
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+			</div>
+			<if condition="($infotype['userType'] eq 2) OR ($infotype['userType'] eq 3)  OR ($infotype['userType'] eq 4)">
+			<div class="row font15 bg-fff mar-t15">
+					<a href="{:U('user/ranking')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/6.png"/>
+						我的排名
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/teammange')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/7.png"/>
+						团队管理
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/performancesearch')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/8.png"/>
+						业绩查询
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+			</div>
+			</if>
+			<div class="row font15 bg-fff mar-t15">
+			<if condition="$infotype['userType'] eq 5">
+					<a href="{:U('user/goodyun')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/9.png"/>
+						货运管理<if condition="$giyun gt 0">
+						<font color="red" size="1">({$giyun}单未接受)</font>
+						<else />
+						</if>
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/moneymange')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/11.png"/>
+						收入管理
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/areamange')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+					<img class="order1" src="__PUBLIC__/img/armn.jpg"/>
+						区域管理
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/goodyunneed')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/fwxz.jpg"/>
+						服务须知
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+				<elseif condition="($infotype['userType'] eq 6)"/>
+				
+					<a href="{:U('user/install')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/10.png"/>
+						安装管理<if condition="$giyun1 gt 0">
+						<font color="red" size="1">({$giyun1}单未接受)</font>
+						<else />
+						</if>
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="{:U('user/moneymange')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/11.png"/>
+						收入管理
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				
+				</div>
+					</a>
+					<a href="{:U('user/areamange')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/armn.jpg"/>
+						区域管理
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+				<a href="{:U('user/installneed')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/fwxz.jpg"/>
+						服务须知
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+			</if>
+			</div>
+			<div class="row font15 bg-fff mar-t15">
+					<a href="{:U('user/set')}" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/12.png"/>
+						设置
+						 <img class="r1 pull-right" src="__PUBLIC__/img/huoyun/r.png"/>
+				</div>
+					</a>
+					<a href="tel:023-8168-2567" class="color-1a1a1a">
+				<div class="col-xs-12 pad-up15 bor-b-f2">
+						<img class="order1" src="__PUBLIC__/img/mine/13.png"/>
+						客服电话
+						<span class="pull-right color-666">
+							023-8168-2567
+						 	<img class="r1" src="__PUBLIC__/img/huoyun/r.png"/>
+						</span>
+				</div>
+					</a>
+			</div>
+		</div>
+						<!--底部选项卡-->
+		<div class="bottom">
+			<a href="{:U('index/index')}"><div class="other">
+				<img class="center-block" src="__PUBLIC__/img/bottomTab/home.png" />
+				<p>首页</p>
+			</div></a>
+			<a href="{:U('good/classify')}">
+			<div class="other">
+				<img class="center-block" src="__PUBLIC__/img/bottomTab/classify1.png" />
+				<p>分类</p>
+			</div></a>
+			<a href="{:U('good/goodlist')}">
+			<div class="myplus">
+				<img class="center-block" src="__PUBLIC__/img/bottomTab/plus.png" />
+			</div></a>
+			<a href="{:U('good/cart')}">
+			<div class="other">
+				<img class="center-block" src="__PUBLIC__/img/bottomTab/shopcar.png" />
+				<p>购物车</p>
+			</div></a>
+			<a href="{:U('user/userinfo')}">
+			<div class="other">
+				<img class="center-block" src="__PUBLIC__/img/bottomTab/mine1.png" />
+				<p class="color-669900">我的</p></a>
+			</div>
+		</div>
+		<!--model-->
+	</body>
+</html>

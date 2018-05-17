@@ -1,0 +1,84 @@
+body{
+	background: #F2F2F2;
+}
+.nav{
+	border-bottom: none;
+}
+.nav .mybtn{
+	position: relative;
+	top: 4px;
+	margin-right: 15px;
+}
+.nav span{
+	line-height: 30px;
+}
+.back img{
+	width: 10px;
+	height: 20px;
+	margin-left: 7px;
+	margin-top: 1px;
+}
+.tit{
+	overflow: hidden;
+}
+.tit li{
+	padding: 10px 0;
+	width: 20%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.tit li.active:after{
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #669900;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.list{
+	width: 48%;
+	float: left;
+	position: relative;
+	margin-top: 10px;
+}
+.list:nth-of-type(2n){
+	margin-left: 4%;
+}
+.tip{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.tip img{
+	width: 60px;
+}
+.b-t{
+	border-top: 2px solid #669900;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	background: #fff;
+}
+.r:after{
+	content: '';
+	width: 2px;
+	height: 80%;
+	background: #ccc;
+	position: absolute;
+	top: 10%;
+	right: 0;
+}
+.cont{
+	margin-bottom: 46px;
+	
+}
+
+.cont-list{
+	display: none;
+}
+.cont-list.active{
+	display: block;
+}

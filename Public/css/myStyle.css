@@ -1,0 +1,319 @@
+body{
+	font: "微软雅黑" !important;
+}
+/*字体大小*/
+.font6{
+	font-size: 6px !important;
+}
+.font8{
+	font-size: 8px !important;
+}
+.font9{
+	font-size: 9px !important;
+}
+.font10{
+	font-size: 10px !important;
+}
+.font11{
+	font-size: 11px !important;
+}
+.font12{
+	font-size: 12px !important;
+}
+.font13{
+	font-size: 13px !important;
+}
+.font14{
+	font-size: 14px !important;
+}
+.font15{
+	font-size: 15px !important;
+}
+.font16{
+	font-size: 16px !important;
+}
+.font17{
+	font-size: 17px !important;
+}
+.font18{
+	font-size: 18px !important;
+}
+.font20{
+	font-size: 20px !important;
+}
+.font24{
+	font-size: 24px !important;
+}
+.font30{
+	font-size: 30px !important;
+}
+.font50{
+	font-size: 50px !important;
+}
+/*字体颜色*/
+.color-669900{
+	color: #669900 !important;
+}
+.color-666{
+	color: #666 !important;
+}
+.color-999{
+	color: #999 !important;
+}
+.color-c6c6c6{
+	color: #c6c6c6 !important;
+}
+.color-fff{
+	color: #fff !important;
+}
+.color-333{
+	color: #333 !important;
+}
+.color-1a1a1a{
+	color: #1A1A1A !important;
+}
+.color-4c4c4c{
+	color: #4c4c4c !important;
+}
+.color-ff5b01{
+	color: #ff5b01 !important;
+}
+.color-4d4d4d{
+	color: #4d4d4d !important;
+}
+.color-669900{
+	color: #669900 !important;
+}
+.color-c21b1b{
+	color: #c21b1b !important;
+}
+.color-82ab30{
+	color: #82ab30 !important;
+}
+.color-808080{
+	color: #808080 !important;
+}
+.color-a30505{
+	color: #a30505 !important;
+}
+.color-cf000f{
+	color: #cf000f !important;
+}
+.color-eb2522{
+	color: #eb2522 !important;
+}
+.color-ff5a00{
+	color: #ff5a00 !important;
+}
+.color-c30319{
+	color: #c30319 !important;
+}
+.color-972030{
+	color: #972030 !important;
+}
+.color-ffe900{
+	color: #ffe900 !important;
+}
+/*padding*/
+.pad-r0{
+	padding-right: 0 !important;
+}
+.pad-l10{
+	padding-left: 1px !important;
+}
+.pad-r10{
+	padding-right: 10px !important;
+}
+.pad-b10{
+	padding-bottom: 10px;
+}
+.pad-l0{
+	padding-left: 0px !important;
+}
+.pad-l7{
+	padding-left: 7px !important;
+}
+.pad-r7{
+	padding-right: 7px !important;
+}
+.padd_0{
+	padding: 0  !important;
+}
+.pad10{
+	padding: 10px !important;
+}
+.pad5{
+	padding: 5px !important;
+}
+.pad-lr5{
+	padding: 0 5px !important;
+}
+.pad-lr10{
+	padding: 0 10px !important;
+}
+.pad-lr0{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.pad-up5{
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+.pad-up10{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.pad-up15{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+.pad-up16{
+	
+	padding-bottom: 15px !important;
+}
+.pad-up20{
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+/*mar*/
+.mar0{
+	margin: 0px !important;
+}
+.mar-t5{
+	margin-top: 5px !important;
+}
+.mar-t10{
+	margin-top: 10px !important;
+}
+
+.mar-t15{
+	margin-top: 15px !important;
+}
+.mar-t20{
+	margin-top: 20px !important;
+}
+.mar-t25{
+	margin-top: 25px !important;
+}
+.mar-t40{
+	margin-top: 40px !important;
+}
+.mar-t50{
+	margin-top: 50px !important;
+}
+.mar-b10{
+	margin-bottom: 10px !important;
+}
+.mar-b20{
+	margin-bottom: 20px !important;
+}
+.mar-b0{
+	margin-bottom: 0px !important;
+}
+.mar-b5{
+	margin-bottom: 5px !important;
+}
+.mar-b15{
+	margin-bottom: 15px !important;
+}
+.mar-b52{
+	margin-bottom: 52px !important;
+}
+.mar-l5{
+	margin-left: 5px !important;
+}
+.mar-l10{
+	margin-left: 10px !important;
+}
+
+/*背景色*/
+.bg-fff{
+	background: #fff !important;
+}
+.bg-e6e6e6{
+	background: #e6e6e6 !important;
+}
+.bg-eb2522{
+	background: #eb2522 !important;
+}
+.bg-669900{
+	background: #669900 !important;
+}
+.bg-ff5a00{
+	background: #ff5a00 !important;
+}
+.bg-71b5e6{
+	background: #71b5e6 !important;
+}
+.bg-74c666{
+	background: #74c666 !important;
+}
+.bg-82ab30{
+	background: #82ab30 !important;
+}
+.bg-b3b3b3{
+	background: #b3b3b3 !important;
+}
+.bg-e60012{
+	background: #e60012 !important;
+}
+.bg-eb2522{
+	background: #eb2522 !important;
+}
+.bg-c30319{
+	background: #c30319 !important;
+}
+.bg-f2f2f2{
+	background: #F2F2F2 !important;
+}
+/*按钮样式*/
+.mybtn{
+	background: none;
+	border: none;
+}
+/*边框*/
+.bor-b-cccccc{
+	border-bottom: 1px solid #cccccc;
+}
+
+/*控制最多显示的行数*/
+.heightControl-2{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient:vertical ;
+}
+.heightControl-1{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient:vertical ;
+}
+/*加粗*/
+.font-w{
+	font-weight: bold;
+}
+/*边框*/
+.no-bor{
+	border: none !important;
+}
+/*圆角*/
+.bor-radius5{
+	border-radius: 5px;
+}
+/*文本*/
+.text-indent2{
+	text-indent: 2em;
+}
+.line-h15{
+	line-height: 1.5em;
+}
+.line-h18{
+	line-height: 1.8em;
+}
+/*display*/
+.disply-ib{
+	display: inline-block;
+}

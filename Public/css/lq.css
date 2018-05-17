@@ -1,0 +1,10 @@
+body{
+	background: #F2F2F2;
+}
+.cont{
+	margin-top: 60px;
+}
+.bg{
+	background: url(../img/person/bg11.png) no-repeat;
+	background-size: 100% 100%;
+}

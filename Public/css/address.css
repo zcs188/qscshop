@@ -1,0 +1,60 @@
+body{
+	background: #f2f2f2;
+}
+.infor .sel .sel-icon{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border: 1px solid #99cc33;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.infor .sel .sel-icon.active{
+	background: #99CC33 url(../img/address/gou.png);
+	background-size: 12px 12px;
+	background-position: center center; 
+}
+.infor .editor img{
+	width: 14px;
+	height: 14px;
+}
+.infor .editor button{
+	border: none;
+	background: none;
+}
+.cont{
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.circle{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	vertical-align: middle;
+	background: #fff;
+}
+.circle.active{
+	background:#fff url(../img/list/gou.png) no-repeat;
+	background-size: 18px 18px; 
+	background-position: center center;
+	border: none;
+}
+.b{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.save{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: #669900;
+	line-height: 50px;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+}
+

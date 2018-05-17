@@ -1,0 +1,563 @@
+[ 2017-07-25T21:00:16+08:00 ] 127.0.0.1 /extensions/kindeditor/themes/default/default.png)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+NOTIC: [2] preg_replace(): Compilation failed: unmatched parentheses at offset 5 C:\php\qscjushop\ThinkPHP\Library\Think\Dispatcher.class.php 第 126 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载控制器:Kindeditor
+
+[ 2017-07-25T21:45:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001888s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000454s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001569s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000892s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000540s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001673s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001507s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-07-25T21:51:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001853s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000412s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001686s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000913s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000607s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001546s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001457s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-07-25T22:04:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001540s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000363s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001436s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000751s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000370s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000517s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001316s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001313s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-07-25T22:04:22+08:00 ] 112.74.39.211 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001597s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000365s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001489s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000747s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000481s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001322s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001280s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-07-25T22:16:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001745s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000476s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001571s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000756s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000327s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000503s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001461s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001404s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-07-25T22:26:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001804s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000402s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001712s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000882s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000582s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001416s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001324s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000735s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-07-25T22:27:41+08:00 ] 127.0.0.1 /extensions/kindeditor/themes/default/default.png)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2] preg_replace(): Compilation failed: unmatched parentheses at offset 5 C:\php\qscjushop\ThinkPHP\Library\Think\Dispatcher.class.php 第 126 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载控制器:Kindeditor
+
+[ 2017-07-25T22:35:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001819s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000385s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001735s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000845s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000536s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001502s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001335s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-07-25T22:46:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001850s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000469s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001608s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000793s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000494s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001450s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001438s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-07-25T22:47:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `banner_ad_info` [ RunTime:0.001680s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 1  [ RunTime:0.000371s ]
+SQL: SELECT * FROM banner_ad_info bai INNER JOIN banner_ad_position bad ON bad.id=bai.positionId  WHERE bai.isNotDelete = 1 AND bai.positionId = 2  [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001523s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotNew` = 1  [ RunTime:0.000739s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotTeJia` = 1  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000488s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001427s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001313s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 2 ORDER BY addTime asc  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `goods_meublebasic`  [ RunTime:0.000667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-07-25T22:47:41+08:00 ] 127.0.0.1 /index.php/home/good/activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.002026s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-07-25T22:48:12+08:00 ] 127.0.0.1 /index.php/home/good/activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001884s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotActif` = 1  [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-07-25T22:48:26+08:00 ] 127.0.0.1 /index.php/home/user/messagedetail/id/0b5cae62007a4323bfb5b41003599d1d.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001702s ]
+SQL: SELECT * FROM `article` WHERE `id` = '0b5cae62007a4323bfb5b41003599d1d' LIMIT 1   [ RunTime:0.000269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-07-25T22:48:37+08:00 ] 127.0.0.1 /index.php/home/user/messagedetail/id/586d45b726ff4d92ba5da6bd58c8df72.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.001689s ]
+SQL: SELECT * FROM `article` WHERE `id` = '586d45b726ff4d92ba5da6bd58c8df72' LIMIT 1   [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-25T22:48:57+08:00 ] 127.0.0.1 /index.php/home/good/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.002076s ]
+SQL: SELECT * FROM `goods_meublebasic` LIMIT 9   [ RunTime:0.000432s ]
+SQL: select * from `goods_meubletype` where typeId='0' order by addTime asc limit 0,1 [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `goods_meubletype` [ RunTime:0.001626s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE ( typeId='0' ) ORDER BY addTime asc  [ RunTime:0.000243s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = '1' ORDER BY addTime  asc  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = 'b1b1' ORDER BY addTime asc  [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: kk C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 197 行.
+SQL: select * from `goods_meubletype` where typeId='0' order by addTime asc limit 1,2  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `goods_meubletype` WHERE `typeId` = '2' ORDER BY addTime asc  [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasictype` [ RunTime:0.001773s ]
+SQL: SELECT * FROM `goods_meublebasictype` WHERE `classify1` = 2 LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT reserve1 as productid,gm.* FROM goods_meublebasic gm WHERE `id` = 'dc7479bb-3b6d-4eec-a41d-ed8e0d6a0c23' AND `environType` = 2 ORDER BY imaginerNumber desc LIMIT 4   [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: kk1 C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 216 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: id C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 42 行.
+NOTIC: [8] Undefined index: typeName C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 44 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 67 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 67 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 67 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 67 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 67 行.
+NOTIC: [8] Undefined index: id C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 90 行.
+NOTIC: [8] Undefined index: typeName C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 92 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+NOTIC: [8] Undefined index: son1 C:\php\qscjushop\Application\Runtime\Cache\Home\23e3b144a6d4b45e1c0fd1199e223c3b.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-07-25T22:49:01+08:00 ] 127.0.0.1 /index.php/home/good/goodlist/new/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001815s ]
+SQL: SELECT reserve1 as productid,gm.* FROM goods_meublebasic gm WHERE `environType` = 2 AND `isNotNew` LIKE '%1%' LIMIT 5   [ RunTime:0.000397s ]
+SQL: SELECT reserve1 as productid,gm.* FROM goods_meublebasic gm ORDER BY imaginerNumber desc LIMIT 5   [ RunTime:0.000397s ]
+SQL: SELECT reserve1 as productid,gm.* FROM goods_meublebasic gm WHERE ( isNotNew=1 ) ORDER BY gm.addtime desc LIMIT 5   [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-07-25T22:49:15+08:00 ] 127.0.0.1 /index.php/home/good/gooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [8] Undefined index: userid C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `user_consignee_address` [ RunTime:0.001809s ]
+SQL: SELECT * FROM `user_consignee_address` WHERE `userId` = null AND `reserve1` = 1 AND `isNotTacite` = 2 LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `tb_da_area` [ RunTime:0.001365s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.001894s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.001840s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.001837s ]
+NOTIC: [8] Undefined index: goodsid C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `admin_systemconfig` [ RunTime:0.001452s ]
+SQL: SELECT `configValue` FROM `admin_systemconfig` LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: token C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `goods_meubleimage` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `goods_meubleimage` WHERE `meubleId` = null ORDER BY number asc  [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `user_meubleorder_details` [ RunTime:0.001522s ]
+SQL: SELECT * FROM `user_meubleorder_details` WHERE `goodsId` = null LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001501s ]
+SQL: SELECT gm.reserve1 as productid,gmc.reserve1 as meubleImage1,gm.*,gmc.* FROM goods_meublebasic gm INNER JOIN goods_meublespecifications gmc ON gmc.meubleId=gm.id  WHERE gm.id = null LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `goods_meublespecifications` [ RunTime:0.001331s ]
+SQL: SELECT * FROM `goods_meublespecifications` WHERE `meubleId` = null  [ RunTime:0.000251s ]
+SQL: SELECT `meublerNumber` FROM `goods_meublespecifications` WHERE `meubleId` = null LIMIT 1   [ RunTime:0.000173s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-07-25T22:49:44+08:00 ] 127.0.0.1 /index.php/home/good/gooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: userid C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `user_consignee_address` [ RunTime:0.001976s ]
+SQL: SELECT * FROM `user_consignee_address` WHERE `userId` = null AND `reserve1` = 1 AND `isNotTacite` = 2 LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tb_da_area` [ RunTime:0.001370s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.002123s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.002095s ]
+SQL: SELECT `cityName` FROM `tb_da_area` WHERE `codeid` = null LIMIT 1   [ RunTime:0.002043s ]
+NOTIC: [8] Undefined index: goodsid C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `admin_systemconfig` [ RunTime:0.001325s ]
+SQL: SELECT `configValue` FROM `admin_systemconfig` LIMIT 1   [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: token C:\php\qscjushop\Application\Home\Controller\GoodController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `goods_meubleimage` [ RunTime:0.001662s ]
+SQL: SELECT * FROM `goods_meubleimage` WHERE `meubleId` = null ORDER BY number asc  [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `user_meubleorder_details` [ RunTime:0.001407s ]
+SQL: SELECT * FROM `user_meubleorder_details` WHERE `goodsId` = null LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `goods_meublebasic` [ RunTime:0.001451s ]
+SQL: SELECT gm.reserve1 as productid,gmc.reserve1 as meubleImage1,gm.*,gmc.* FROM goods_meublebasic gm INNER JOIN goods_meublespecifications gmc ON gmc.meubleId=gm.id  WHERE gm.id = null LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT * FROM `goods_meublebasic` WHERE `isNotPreface` = 1  [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `goods_meublespecifications` [ RunTime:0.001357s ]
+SQL: SELECT * FROM `goods_meublespecifications` WHERE `meubleId` = null  [ RunTime:0.000250s ]
+SQL: SELECT `meublerNumber` FROM `goods_meublespecifications` WHERE `meubleId` = null LIMIT 1   [ RunTime:0.000166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+

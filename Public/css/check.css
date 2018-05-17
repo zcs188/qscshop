@@ -1,0 +1,24 @@
+.compile{
+	margin-top: 4px;
+}
+.cont{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.check{
+	width: 20px;
+	margin-top: -3px;
+}
+label{
+	font-weight: normal;
+}
+.inp{
+	width: 200px;
+	border: none;
+	background: none;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.tj{
+	width: 100px;
+}

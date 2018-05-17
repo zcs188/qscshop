@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>消息</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/safe.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css" />
+	</head>
+
+	<body>
+		<!--顶部标题-->
+		<div class="nav text-center">
+				<a href="#" onClick="javascript:history.back(-1);"><button type="button" class="mybtn pull-left back">
+				<img src="__PUBLIC__/img/list/right.png"/>
+			</button></a>
+			<span class="font17">消 息</span>
+		</div>
+
+		<!--顶部标题-->
+		<div class="container-fluid cont1">
+		<foreach name="message" item="vo">
+			<div class="row">
+				<div class="col-xs-12 text-center pad-up15">
+					<span class="notice">{$vo.create_time}</span>
+				</div>
+				<div class="col-xs-12 font15 pad-up15 bor-b-f2  bg-fff">
+					{$vo.title}
+				</div>
+				<div class="col-xs-12 font15 pad-up15 bor-b-f2  bg-fff">
+					<a href="{:U('user/messagedetail',array('id'=>$vo['id']))}">
+						<span class="color-666">前往查看</span>
+						<span class="pull-right"><img class="r" src="__PUBLIC__/img/huoyun/r.png"/></span>
+					</a>
+				</div>
+			</div>
+			</foreach>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+	</script>
+
+</html>

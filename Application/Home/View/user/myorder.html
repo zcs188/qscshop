@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>我的订单</title>
+<link rel="stylesheet" href="__PUBLIC__/Bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/public.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css"/>
+<link rel="stylesheet" href="__PUBLIC__/css/MyOrder.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/need/layer.css"/>
+<script type="text/javascript" src="__PUBLIC__/Bootstrap/js/jquery.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/js/plupload.full.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/js/qiniu.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		$('.AllOrder').click(function(){
+			$(this).siblings().removeClass("TypeClick");
+			$(this).addClass("TypeClick");
+			$('.DaiFu').show();
+			$('.WeiFa').show();
+			$('.ShouHuo').show();
+			$('.PinJia').show();
+			$('.PinJia1').show();
+		});	
+		
+		$('.PaymentOrder').click(function(){
+			$(this).siblings().removeClass("TypeClick");
+			$(this).addClass("TypeClick");
+			$('.DaiFu').show();	
+			$('.WeiFa').hide();
+			$('.ShouHuo').hide();
+			$('.PinJia').hide();
+			$('.PinJia1').hide();
+		});	
+		
+		$('.ReceiptOrder').click(function(){
+			$(this).siblings().removeClass("TypeClick");
+			$(this).addClass("TypeClick");
+			$('.DaiFu').hide();
+			$('.WeiFa').hide();
+			$('.ShouHuo').show();
+			$('.PinJia').hide();
+			$('.PinJia1').hide();
+		});	
+		
+		$('.EvaluationOrder').click(function(){
+			$(this).siblings().removeClass("TypeClick");
+			$(this).addClass("TypeClick");
+			$('.DaiFu').hide();
+			$('.WeiFa').hide();
+			$('.ShouHuo').hide();
+			$('.PinJia').show();
+			$('.PinJia1').hide();
+		});	
+		$('.EvaluationOrder1').click(function(){
+			$(this).siblings().removeClass("TypeClick");
+			$(this).addClass("TypeClick");
+			$('.DaiFu').hide();
+			$('.WeiFa').hide();
+			$('.ShouHuo').hide();
+			$('.PinJia').hide();
+			$('.PinJia').show();
+		});	
+		
+	});
+</script>
+</head>
+
+<body>
+	<!--顶部标题-->
+		<div class="nav text-center">
+			<a href="#" onClick="javascript:history.back(-1);"><button type="button" class="mybtn pull-left back">
+				<img src="__PUBLIC__/img/list/right.png"/>
+			</button></a>
+			<span class="font16">我的订单</span>
+		</div>
+		<!--顶部标题-->
+	<div class=" container-fluid padd_0 cont">
+       	<div class="col-xs-12 padd_0 infoBox">
+       		<div class="OrderTypeBox mar-b5">
+	        	<div class="OrderType1 AllOrder TypeClick">全部</div>
+	            <div class="OrderType1 PaymentOrder ">待付款</div>
+	            <div class="OrderType1 ReceiptOrder ">待收货</div>
+	            <div class="OrderType1 EvaluationOrder ">待评价</div>
+				<div class="OrderType1 EvaluationOrder1 ">已完成</div>
+	        </div>
+
+        <volist name="orderlist" id="v" empty="暂时没有数据" >
+         <if condition="$v['ordreType'] eq 0">
+       <if condition="$v['son3'] neq 9">
+        <div class="OredrBox DaiFu">
+                    订单编号：{$v.ordreCoter}
+            <div class="OredrInfo">
+            	<div class="shopinfo">
+           
+					<if condition="$v['son3'] eq 0"><span class="color-669900 font15">待付款</span>
+					<elseif condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)" /><span class="color-669900 font15">待收货</span>
+					<elseif condition="$v['son3'] eq 6" /><span class="color-669900 font15">安装评价</span>
+					<elseif condition="$v['son3'] eq 7" /><span class="color-669900 font15">交易已完成</span>
+					<else />
+					</if>
+                </div>
+                <foreach name="v.son" item="v1">
+                 <div class="OrderContent bg-fff">
+                 <a href="{:U('user/orderdetail',array('orderid'=>$v['id']))}" style="color:#000000">
+                     <div class="orderImg">
+                        <img src="{$v1.reserve1}" class="img-responsive">
+                     </div>
+                     <div class="orderName">
+                        <div class="ProductName">{$v1.goodsName}</div>
+                        <div class="specification font11">规格：{$v1.norme2}{$v1.norme1}</div>
+                     </div>
+                     <div class="orderPice">
+                        <div class="CurrentPrice color-669900 text-center">￥{$v1.moneyGoods}</div>
+                        <div class="CurrentPrice text-right PiceColor">X{$v1.goodsNumber}</div>
+                              <if condition="$v.son6 eq 3">
+                               
+				 				<font size="1" color="green"><a href="{:U('user/goodyuncomment',array('orderid'=>$v['id'],'specid'=>$v1['specid']))}"> <button class="DistributionButton">有瑕疵</button></a> </font>
+						<elseif condition="$v['son12'] neq ''" />
+						<font size="1" color="green"><a href="{:U('user/goodyunhandle',array('goodyunid'=>$v['son10']))}"> <button class="DistributionButton">查看有瑕疵回复</button></a>  </font>
+						<else />
+						
+						
+						</if>
+                     </div>
+                  </a>
+                </div>
+                    </foreach>
+                <div class="Distribution">
+                 	<!-- <span class="font13 color-4c4c4c">送货并入户安装</span>  -->
+                    <span class="font12 color-666 pull-right">实际支付：<span class="font15 color-669900">￥{$v.payerSomme} <if condition="$v['son1'] gt 0">(含运费:{$v.son1})<else/>包邮</if></span></span>
+                </div>
+                	
+                <if condition="$v['son3'] eq 0">
+                <div class="Distribution text-right">
+             
+                	<button class="DistributionButton" onclick="cancelorder('{$v.id}');">取消订单</button>
+                    <button class="ConfirmButton bg-669900" onclick="oncepay('{$v.id}');">立即付款</button>
+                    
+                </div> 
+
+					<elseif condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)" />
+					 <div class="Distribution text-right">
+		 	
+                    <button class="ConfirmButton bg-669900" onclick="suregood('{$v.id}');">确认收货</button>
+                </div> 
+					 
+                <elseif condition="$v['isNotEvaluation'] eq 1" />
+                    <div class="Distribution text-right">
+                     
+                         <if condition="$v.son5 eq 4">
+				 				
+                       <a href="{:U('user/installcomment',array('orderid'=>$v['id']))}"><button class="ConfirmButton bg-669900 evaluate" >安装评价</button></a>
+				 				
+						<else />
+						</if> 
+                </div> 
+					<else />
+					</if>
+            </div>
+        </div>
+        <else />
+    </if>
+        <else />
+    </if>
+   </volist>
+   
+        <volist name="orderlist" id="v" >
+       <if condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)">
+        <!--待收货-->
+        <div class="OredrBox ShouHuo">
+                 订单编号：{$v.ordreCoter}
+            <div class="OredrInfo">
+            	<div class="shopinfo">
+                   
+					<if condition="$v['son3'] eq 0"><span class="color-669900 font15">待付款</span>
+							<elseif condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)" /><span class="color-669900 font15">待收货</span>
+					<elseif condition="$v['son3'] eq 6" /><span class="color-669900 font15">安装评价</span>
+					<elseif condition="$v['son3'] eq 7" /><span class="color-669900 font15">交易已完成</span>
+					<else />
+					</if>
+                </div>
+           <foreach name="v.son" item="v1">
+                 <div class="OrderContent bg-fff">
+                 <a href="{:U('user/orderdetail',array('orderid'=>$v['id']))}" style="color:#000000">
+                     <div class="orderImg">
+                        <img src="{$v1.reserve1}" class="img-responsive">
+                     </div>
+                     <div class="orderName">
+                        <div class="ProductName">{$v1.goodsName}</div>
+                        <div class="specification font11">规格：{$v1.norme2}{$v1.norme1}</div>
+                     </div>
+                     <div class="orderPice">
+                        <div class="CurrentPrice color-669900 text-center">￥{$v1.moneyGoods}</div>
+                        <div class="CurrentPrice text-right PiceColor">X{$v1.goodsNumber}</div>
+                     </div>
+                         <if condition="$v.son6 eq 3">
+                               
+				 				<font size="1" color="green"><a href="{:U('user/goodyuncomment',array('orderid'=>$v['id'],'specid'=>$v1['specid']))}"> <button class="DistributionButton">有瑕疵</button></a> </font>
+						<elseif condition="$v['son12'] neq ''" />
+						<font size="1" color="green"><a href="{:U('user/goodyunhandle',array('goodyunid'=>$v['son10']))}"> <button class="DistributionButton">查看有瑕疵回复</button></a>  </font>
+						<else />
+						
+						
+						</if>
+                  </a>
+         
+                </div>
+                    </foreach>
+                <div class="Distribution">
+                 	
+                    <span class="font12 color-666 pull-right">实际支付：<span class="font15 color-669900">￥{$v.payerSomme} <if condition="$v['son1'] gt 0">(含运费:{$v.son1})<else/>包邮</if></span></span>
+                </div>
+                <div class="Distribution text-right">
+                <if condition="$v['son3'] eq 6">
+                    <a href="{:U('user/installcomment',array('orderid'=>$v['id']))}"><button class="ConfirmButton bg-669900 evaluate" >安装评价</button></a>
+                    <else />
+                    <button class="ConfirmButton bg-669900" onclick="suregood('{$v.id}');">确认收货</button>
+                    </if>
+                </div> 
+            </div>
+        </div>
+               <else />
+    </if>
+   </volist>
+        
+          <volist name="orderlist" id="v">
+
+					<if condition="$v['son3'] eq 6">
+        <!--待评价-->
+        <div class="OredrBox PinJia">
+         订单编号：{$v.ordreCoter}
+            <div class="OredrInfo">
+            	<div class="shopinfo">
+             
+					<if condition="$v['son3'] eq 0"><span class="color-669900 font15">待付款</span>
+							<elseif condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)" /><span class="color-669900 font15">待收货</span>
+					<elseif condition="$v['son3'] eq 6" /><span class="color-669900 font15">安装评价</span>
+					<elseif condition="$v['son3'] eq 7" /><span class="color-669900 font15">交易已完成</span>
+					<else />
+					</if>
+				
+                </div>
+                <foreach name="v.son" item="v1">
+                 <div class="OrderContent bg-fff">
+                 <a href="{:U('user/orderdetail',array('orderid'=>$v['id']))}" style="color:#000000">
+                     <div class="orderImg">
+                        <img src="{$v1.reserve1}" class="img-responsive">
+                     </div>
+                     <div class="orderName">
+                        <div class="ProductName">{$v1.goodsName}</div>
+                        <div class="specification font11">规格：{$v1.norme2}{$v1.norme1}</div>
+                     </div>
+                     <div class="orderPice">
+                        <div class="CurrentPrice color-669900 text-center">￥{$v1.moneyGoods}</div>
+                        <div class="CurrentPrice text-right PiceColor">X{$v1.goodsNumber}</div>
+                     </div>
+                  </a>
+                       
+                </div>
+                    </foreach>
+                <div class="Distribution">
+                 	
+                     <span class="font12 color-666 pull-right">实际支付：<span class="font15 color-669900">￥{$v.payerSomme} <if condition="$v['son1'] gt 0">(含运费:{$v.son1})<else/>包邮</if></span></span>
+                      <if condition="$v['son13'] neq ''">
+                     <br/>
+                      <span class="font12 color-666 pull-right">师傅/电话:{$v['son13']['membersNameAndPhone']} </span>
+                    <br/>
+                      <span class="font12 color-666 pull-right">完成时间:{$v['son13']['membersTime']} </span>
+					<else />
+					</if>
+                </div>
+                <div class="Distribution text-right">		
+                       <a href="{:U('user/installcomment',array('orderid'=>$v['id']))}"><button class="ConfirmButton bg-669900 evaluate" >安装评价</button></a>
+				 		
+                </div> 
+            </div>
+        </div>
+                  <else />
+    </if>
+   </volist>
+      <volist name="orderlist" id="v">
+
+					<if condition="$v['son3'] eq 7">
+        <!--已完成-->
+        <div class="OredrBox PinJia1">
+         订单编号：{$v.ordreCoter}
+            <div class="OredrInfo">
+            	<div class="shopinfo">
+             
+					<if condition="$v['son3'] eq 0"><span class="color-669900 font15">待付款</span>
+							<elseif condition="($v['son3'] gt 0)  AND ($v['son3'] lt 6)" /><span class="color-669900 font15">待收货</span>
+					<elseif condition="$v['son3'] eq 6" /><span class="color-669900 font15">安装评价</span>
+					<elseif condition="$v['son3'] eq 7" /><span class="color-669900 font15">交易已完成</span>
+					<else />
+					</if>
+				
+                </div>
+                <foreach name="v.son" item="v1">
+                 <div class="OrderContent bg-fff">
+                 <a href="{:U('user/orderdetail',array('orderid'=>$v['id']))}" style="color:#000000">
+                     <div class="orderImg">
+                        <img src="{$v1.reserve1}" class="img-responsive">
+                     </div>
+                     <div class="orderName">
+                        <div class="ProductName">{$v1.goodsName}</div>
+                        <div class="specification font11">规格：{$v1.norme2}{$v1.norme1}</div>
+                     </div>
+                     <div class="orderPice">
+                        <div class="CurrentPrice color-669900 text-center">￥{$v1.moneyGoods}</div>
+                        <div class="CurrentPrice text-right PiceColor">X{$v1.goodsNumber}</div>
+                     </div>
+                  </a>
+                       
+                </div>
+                    </foreach>
+                <div class="Distribution">
+                 	
+                     <span class="font12 color-666 pull-right">实际支付：<span class="font15 color-669900">￥{$v.payerSomme} <if condition="$v['son1'] gt 0">(含运费:{$v.son1})<else/>包邮</if></span></span>
+                      <if condition="$v['son13'] neq ''">
+                     <br/>
+                      <span class="font12 color-666 pull-right">师傅/电话:{$v['son16']} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$v['son15']}</span>
+                    <br/>
+                      <span class="font12 color-666 pull-right">完成时间:{$v['son13']['completeTime']} </span>
+					<else />
+					</if>
+                </div>
+                <div class="Distribution text-right">		
+                     <button class="ConfirmButton bg-669900 evaluate" >已完成</button>
+				 		
+                </div> 
+            </div>
+        </div>
+                  <else />
+    </if>
+   </volist>
+   
+        </div>
+    </div>
+   
+</body>
+
+
+<script type="text/javascript">
+  
+	/*  取消订单*/
+	function cancelorder(id)
+	{
+		var url="{:U('good/cancelorder')}";
+		$.post(url, {id:id}, function(msg){
+            if(msg.state=='200'){
+            	
+            	window.location.reload();
+            }
+            else if(msg.state == '400')
+            {
+           	 window.location.href ='/index.php/home/user/login';
+            }
+            else if(msg.state!='200'){
+           layer.open({
+       		    content: msg.msg
+       		    ,skin: 'msg'
+       		    ,time: 3 //3秒后自动关闭
+       		  }); 
+            }
+          }, 'json')  
+	}
+	/*  确认收货*/
+	function suregood(id)
+	{
+		var url="{:U('good/suregood')}";
+		$.post(url, {id:id}, function(msg){
+            if(msg.state=='200'){
+             window.location.reload();
+            }
+            else if(msg.state == '400')
+            {
+           	 window.location.href ='/index.php/home/user/login';
+            }
+            else if(msg.state!='200'){
+           layer.open({
+       		    content: msg.msg
+       		    ,skin: 'msg'
+       		    ,time: 3 //3秒后自动关闭
+       		  }); 
+            }
+          }, 'json')  
+	}
+	/*  立即付款*/
+	function oncepay(orderid)
+	{
+		 window.location.href ='/index.php/home/user/getweixinopenid?orderid='+orderid;
+	}
+</script>
+
+
+</html>

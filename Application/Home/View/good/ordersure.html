@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>确认订单</title>
+		<link rel="stylesheet" href="__PUBLIC__/Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myCollect.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/need/layer.css"/>
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/owl/js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/Bootstrap/js/jquery.min.js" ></script>
+		<script type="text/javascript">
+		</script>
+	</head>
+	<body>
+		 <!--顶部标题-->
+		<div class="nav text-center">
+			<a href="#" onClick="javascript:history.back(-1);"><button type="button" class="mybtn pull-left back">
+				<img src="__PUBLIC__/img/list/right.png"/>
+			</button></a>
+			<span class="font16">确认订单</span>
+		</div>
+
+		<!--顶部标题-->
+		<div class="container-fluid cont">
+		<if condition="$auto['id']"> 
+				<!--address开始-->
+				<div class="row">
+			
+				<div class="col-xs-12 padd_0 bg-fff">
+					<div class="col-xs-1 text-center padd_0">
+						<img class="local" src="__PUBLIC__/img/order/dingwei.png"/>
+					</div>
+					<a onclick="getaddressurl()" style="color:#000000">
+					<div class="col-xs-9 padd_0">
+						<p class="mar-b5 mar-t10">
+							<span>{$auto.userName}</span>
+							<span class="pull-right">{$auto.userPhone}</span>
+						</p>
+						<p>
+							{$province1}{$city}{$area}{$auto.adresse}
+						</p>
+					</div>
+					<div class="col-xs-2 padd_0 text-center">
+						<img class="more" src="__PUBLIC__/img/order/r.png"/>
+					</div>
+					</a>
+				</div>
+				
+			</div>
+		<else />
+		<!-- <a href="{:U('User/address',array('specid'=>$specid,'number'=>$number))}" class="message" align="center">选择收货地址,点击添加</a> -->
+		<p align="center" onclick="getaddressurl()">选择收货地址,点击添加</p>
+		<br/>
+     </if>
+			
+			<div class="row">
+			<foreach name="volist" item="v" >
+			<if condition="$v['specid'] neq $v['specid']">
+				<div class="col-xs-12 padd_0 bg-fff mar-t10 pad-up10">
+					<div class="col-xs-3 pad-r7">
+						<img class="img-rounded img-responsive" src="{$v.reserve1}"/>
+					</div>
+					<div class="col-xs-9 padd_0">
+					<a href="{:U('good/gooddetail',array('goodsid'=>$v['goodsid']))}" style="color:#000000">
+						<div class="col-xs-7 padd_0">
+							<p class="font12 color-333 mar-b5 heightControl-2">
+								{$v.meubleName}
+							</p>
+							<p class="font12 color-4c4c4c">规格：{$v.norme2}【{$v.norme1}】</p>
+						</div>
+						<div class="col-xs-5 text-right pad-l0">
+				<if condition="($v['isNotTeJia'] eq 1) OR ($v['isNotActif'] eq 1) ">
+							<p class="font13 color-669900"><font style="color:red" >￥{$v.meubleActifPrix}</font></p>
+				<else />
+				     <p class="font13 color-669900">￥{$v.meublePrix}</p>
+				</if>
+							<p>x{$v.son}</p>
+						</div>
+						</a>
+					</div>
+				</div>
+				<else />
+					 	<div class="col-xs-12 padd_0 bg-fff mar-t10 pad-up10">
+					<div class="col-xs-3 pad-r7">
+						<img class="img-rounded img-responsive" src="{$v.reserve1}"/>
+					</div>
+					<div class="col-xs-9 padd_0">
+					<a href="{:U('good/gooddetail',array('goodsid'=>$v['goodsid']))}" style="color:#000000">
+						<div class="col-xs-7 padd_0">
+							<p class="font12 color-333 mar-b5 heightControl-2">
+								{$v.meubleName}
+							</p>
+							<p class="font12 color-4c4c4c">规格：{$v.norme2}【{$v.norme1}】</p>
+						</div>
+						<div class="col-xs-5 text-right pad-l0">
+				<if condition="($v['isNotTeJia'] eq 1) OR ($v['isNotActif'] eq 1) ">
+							<p class="font13 color-669900"><font style="color:red" >￥{$v.meubleActifPrix}</font></p>
+				<else />
+				     <p class="font13 color-669900">￥{$v.meublePrix}</p>
+				</if>
+							<p>x{$v.son}</p>
+						</div>
+						</a>
+					</div>
+				</div> 
+				</if>
+				</foreach>
+				<div class="col-xs-12 bg-fff mar-t15 b">
+					<!-- <p class="color-333 mar-t10">配送方式：送货入户并安装</p> -->
+				</div>
+				<div class="col-xs-12 bg-fff b">
+					<a href="javascript:;" style="color:#000000">
+					<p class="color-333 mar-t10">
+						使用代金券
+						<select class="pull-right dai" style="border:none;width:100px;" id="dai">
+						<option aaa="" value="0">-请选择-</option>
+						<volist name="coupon1" id="vo" empty="暂时没有数据" >
+						<option aaa="{$vo.couponid}" value="{$vo.compenser}">{$vo.chanshu}</option>
+						</volist>
+						</select>
+					</p>
+					</a>
+				</div>
+				<div class="col-xs-12 bg-fff b">
+				<a href="javascript:;" style="color:#000000">
+					<p class="color-333 mar-t10">
+						使用满减券
+						<select class="pull-right" style="border:none;width:100px;" id="man">
+						<option sss="" value="0">-请选择-</option>
+						<volist name="coupon" id="vo" empty="暂时没有数据" >
+					
+						<option sss="{$vo.couponid}" value="{$vo.compenser}">{$vo.chanshu}</option>
+						</volist>
+						
+						</select>
+					</p>
+					</a>
+				</div>
+					<font size="1" style="color:red;margin-left:30px;"  >注意特价商品/活动商品不能使用满减券！
+					<p><font size="1" color="green" style="margin-left:40px;" >●</font><font color="000000">普通商品价格为<font color="green">绿色</font></font></p>
+					<p><font size="1" color="red" style="margin-left:40px;" >●</font><font color="000000">活动/特价价格为<font color="red">红色</font></font></p></font>
+				<div class="col-xs-12 bg-fff">
+					<p class="color-333 mar-t10">
+						积分
+						<span class="pull-right color-666">返送积分{$sumprice}点</span>
+					</p>
+				</div>
+			
+				<div class="col-xs-12 mar-t15">
+					<textarea class="font12 color-999" placeholder="给商家留言（200字以内）" id="getmessage"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 bg-fff mar-t10 b">
+					<p class="color-669900 mar-t10 text-right">共{$znumber}件商品小计：￥<span class="font16" id="subpri">{$sumprice}</span>
+					<if condition="$res['msg'] gt 0">
+					（含运费￥{$res['msg']}）
+					<else/>
+					 包邮
+					</if>
+					</p>
+				</div>
+				<div class="col-xs-12 bg-fff ">
+					<p class="color-333 mar-t10">
+						使用代金券
+						<span class="pull-right color-999" id="daijin">-￥</span>
+					</p>
+				</div>
+				<div class="col-xs-12 bg-fff">
+					<p class="color-333 mar-t10">
+						使用满减券
+						<span class="pull-right color-999"id="manjian">-￥</span>
+					</p>
+				</div>
+				<div class="col-xs-12 bg-fff">
+					<p class="color-333 mar-t10">
+						合计
+						<span class="pull-right color-669900" id="heji1">￥{$sumprice}</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom text-right bg-fff">
+			<span class="font12">
+				合计：<span class="color-669900 font14" id="heji">{$sumprice}</span>
+			</span>
+			<input type="hidden" id="cartarr" value='{$cartarr}'/>
+			<input type="hidden" id="numberv" value='{$number}'/>
+			<button class="order" type="button" id="tiorder"> 提交订单</button>
+		</div>
+	</body>
+
+	
+	<script type="text/javascript">
+	function getaddressurl()
+	{
+		var specid='{$specid}';
+		var number='{$number}';
+		/*  alert(specid);
+		alert(number);  */
+      window.location.href ='/index.php/home/user/address?specid='+specid+'&number='+number;
+	}
+		$(function(){
+			var n=0;
+			var n1=0
+			var sprice=$("#subpri").html();
+			  $("#dai").click(function(){  
+					n = $(this).val();
+					$("#daijin").text(n);
+					price();
+			  })
+			   $("#man").click(function(){  
+					n1 = $(this).val();
+					$("#manjian").text(n1);
+					price();
+			  })
+			  function price(){
+				
+				 var price=sprice;
+					
+					
+				var faillPrice=price-n-n1;
+				$('#heji').html(faillPrice)
+				$('#heji1').html(faillPrice)
+			}
+			
+		  });
+		$(function(){	
+			  $("#tiorder").click(function(){  
+				   
+			         var specidarr=$("#cartarr").val();                             
+			         var numarr=$("#numberv").val();     
+			         var message=$("#getmessage").val(); 
+			         var dcoupid= $('#dai option:selected').attr('aaa');
+			         var mcoupid= $('#man option:selected').attr('sss');
+			         var sumprice=$("#heji").html(); 
+			        
+			        /*  if(mcoupid=='')
+			         {
+			        	 var mcoupid='';
+			         } */
+			         
+			      if(specidarr==""||numarr==""){
+			             layer.open({
+			        		    content: '商品规格与数量不能为空'
+			        		    ,skin: 'msg'
+			        		    ,time: 3 //3秒后自动关闭
+			        		  });
+			             $("#cartarr").focus();
+			             return false;
+			         }
+			    /*   else if(message==""){
+			             layer.open({
+			        		    content: '商家留言不能为空'
+			        		    ,skin: 'msg'
+			        		    ,time: 3 //3秒后自动关闭
+			        		  });
+			             $("#getmessage").focus();
+			             return false;
+			         } */
+			      else
+			         {
+			             var url = "{:U('good/makeorder')}";
+			             $.post(url, {specidarr:specidarr,numarr:numarr,dcoupid:dcoupid,mcoupid:mcoupid,message:message,sumprice,sumprice}, function(msg)
+			            		 {
+			            if(msg.state=='200'){
+			              window.location.href = msg.url;
+			             } 
+			            else if(msg.state == '400')
+			            {
+
+			           	 window.location.href ='/index.php/home/user/login';
+			            }
+			             else if(msg.state!='200'){
+			            	// alert(msg.msg);
+			            layer.open({
+			        		    content: msg.msg
+			        		    ,skin: 'msg'
+			        		    ,time: 3 //3秒后自动关闭
+			        		  }); 
+			             } 
+			             
+			            
+
+			         })
+			         } 
+			       })
+			 
+		  });
+		  
+		</script>
+</html>

@@ -1,0 +1,82 @@
+body{
+	background: #F2F2F2;
+}
+.cont{
+	margin-bottom: 80px;
+	margin-top: 177px;
+}
+.top{
+	background: url(../img/mine/mine.png) no-repeat center center;
+	background-size: cover;
+}
+.user{
+	width: 60px;
+	height:60px;
+	margin-top: 40px;
+}
+.z{
+	width: 16px;
+	margin-top: -4px;
+}
+.username{
+	margin-bottom: 60px;
+}
+.float{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 0;
+	background: rgba(102,153,0,0.5);
+	overflow: hidden;
+}
+.f-list{
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+.order{
+	width: 16px;
+	margin-top: -2px;
+}
+.order1{
+	width: 18px;
+	margin-top: -4px;
+}
+.r{
+	width: 8px;
+	margin-top: -4px;
+}
+.r1{
+	width: 8px;
+	margin-left: 5px;
+	 margin-top: -2px; 
+}
+.pay{
+	width: 20px;
+}
+.pay1{
+	margin-top: -3px;
+}
+.pay2{
+	margin-top: -1px;
+}
+.mine-top{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.mybadge{
+	color: #fff;
+	background: #eb2522;
+	display: inline-block;
+	font-size: 10px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 30%;
+}

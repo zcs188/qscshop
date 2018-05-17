@@ -1,0 +1,92 @@
+body{
+	background: #efefef;
+}
+.add-pad{
+	padding: 10px 10px 10px 0;
+}
+.add-padl{
+	padding-right: 0px;
+}
+.border-b{
+	border-bottom: 1px solid #e3e1e1; 
+}
+.inp{
+	width: 100%;
+	border: none;
+}
+textarea{
+	width: 100%;
+	height: 60px;
+	border: none;
+	resize: none;
+}
+.plus{
+	border: none;
+	background: none;
+	background: url(../img/address/plus.png);
+	background-size: cover;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+/*switch开关样式*/
+.switch .outer{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background: #99cc33;
+	border-radius: 10px;
+	border: 1px solid #99cc33;
+	position: relative;
+}
+.switch .inner{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border: 1px solid #99CC33;
+	border-radius: 50%;
+}
+
+
+.switch .outer.active .inner{
+	position: absolute;
+	right: 0;
+}
+.switch .outer.active {
+	background: white;
+}
+/*省份选择*/
+.cont{
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+select{
+	width:75%;
+	color: #999999;
+	padding: 2px 0;
+	border-radius: 2px;
+}
+select option{
+	background: #fff;
+	color: #333;
+}
+.b{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.save{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: #669900;
+	line-height: 50px;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+}

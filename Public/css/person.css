@@ -1,0 +1,27 @@
+body{
+	background: #F2F2F2;
+}
+.cont{
+	margin-top: 60px;
+}
+.compile{
+	margin-top: 4px;
+	margin-right: 10px;
+}
+.tx{
+	width: 60px;
+}
+.r{
+	width: 8px;
+	margin-top: -2px;
+	margin-left: 10px;
+}
+a:hover{
+	text-decoration: none;
+}
+.back{
+	margin-top: 5px;
+}
+.inp{
+	border: none;
+}

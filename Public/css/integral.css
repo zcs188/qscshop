@@ -1,0 +1,51 @@
+.cont{
+	margin-top: 50px;
+}
+.back{
+	margin-top: 7px;
+}
+.r{
+	width: 9px;
+	height: 15px;
+	margin-top: -1px;
+}
+.user img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.score{
+	width: 16px;
+	margin-top: -7px;
+}
+.classify {
+	border-bottom: 1px solid #F2F2F2;
+}
+.classify div.active:after{
+	content: '';
+	height: 2px;
+	width: 80%;
+	background: #669900;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+.zl{
+	width: 32px;
+	margin-top: 18px;
+	margin-bottom: 14px;
+}
+.zl-infor{
+	background: #669900;
+	color: #fff;
+	font-size: 12px;
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+.cont-list{
+	display: none;
+}
+.cont-list.active{
+	display: block;
+}

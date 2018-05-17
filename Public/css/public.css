@@ -1,0 +1,123 @@
+body{
+	font-family: "微软雅黑" !important;
+	font-size: 14px !important;
+	color: #1A1A1A !important; 
+	color: #1A1A1A;
+}
+.bor-l{
+	border-left:1px solid #c8c7cc;
+}
+.bor-t{
+	border-top:1px solid #c8c7cc !important;
+}
+.bor-b-f2{
+	border-bottom: 1px solid #d8d8d8;
+}
+.padl7{
+	padding: 0 0 0 7px;
+}
+.padr7{
+	padding: 0 7px 0 0;
+}
+.clickM{
+	display: inline-block;
+	color: #fff;
+	font-size: 10px;
+	height:18px;
+	width: 70px;
+	border-radius: 9px;
+	text-align: center;
+	line-height: 18px;
+	position: absolute;
+	bottom: 10%;
+	left:10%;
+}
+.clickM1{
+	display: inline-block;
+	color: #fff;
+	font-size: 10px;
+	height:18px;
+	width: 70px;
+	border-radius: 9px;
+	text-align: center;
+	line-height: 18px;
+	position: absolute;
+	bottom:10%;
+	left:25%;
+}
+/*.clickM:nth-child(1){
+	left:30px;
+}*/
+.clickM:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.clickM1:hover{
+	color: #fff;
+	text-decoration: none;
+}
+/*头部*/
+body{
+	background: #F2F2F2;
+}
+.nav{
+	border-bottom: none;
+}
+.nav .back{
+	position: relative;
+	top: 0px;
+	/*margin-right: 15px;*/
+}
+.nav .mycar{
+	margin-top: 3px;
+}
+.nav span{
+	line-height: 30px;
+	margin-left: -25px;
+}
+.back img{
+	width: 10px;
+	height: 20px;
+	margin-left: 7px;
+	margin-top: -4px;
+}
+/*头部*/
+a:hover{
+	text-decoration: none;
+	
+}
+.btn-round{
+	border: none;
+	border-radius: 5px;
+	padding: 5px 12px;
+	background: none;
+}
+.btn-round1{
+	border: none;
+	border-radius: 4px;
+	padding: 3px 10px;
+	background: none;
+	border: 1px solid #707070 !important;
+}
+
+.btn-round2{
+	border:1px solid #4d4d4d;
+	border-radius: 5px;
+	padding: 2px 5px;
+	background: none;
+	color: #4d4d4d;
+}
+.btn-round3{
+	border:1px solid #4d4d4d;
+	border-radius: 5px;
+	padding: 2px 15px;
+	background: none;
+	color: #4d4d4d;
+}
+.btn-round4{
+	border:1px solid #4d4d4d;
+	border-radius: 5px;
+	padding: 3px 8px 5px;
+	background: none;
+	color: #4d4d4d;
+}

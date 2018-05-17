@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>地址管理</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/address.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/need/layer.css"/>
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/owl/js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="nav text-center">
+					<a href="#" onClick="javascript:history.back(-1);"><button type="button" class="mybtn pull-left back">
+				<img src="__PUBLIC__/img/list/right.png"/>
+			</button></a>
+			<span class="font16">地址管理</span>
+		</div>
+		<!--顶部标题-->
+		<div class="container-fluid cont">
+			<div class="row address">
+				<div class="col-xs-12">
+				<foreach name="userinfo" item="v">
+ 					<div class="col-xs-12 pad10 bg-fff color-4c4c4c">
+						<span class="font15">{$v.userName}</span>
+						<span class="pull-right font15">{$v.userPhone}</span>
+						<p class="font12 pad-up10">
+							{$v.province}{$v.city}{$v.area}{$v.adresse}
+						</p>
+						<div class="infor">
+							<div class="sel pull-left">
+							<if condition="$v['isNotTacite'] eq 2">
+								<span class="circle active"></span>
+								<span class="color-333 font12">设为默认</span>
+								<else />
+								
+								<span class="circle"></span>
+								<span class="color-333 font12" onclick="setdefaultone('{$v.id}')">设为默认</span>
+							</if>
+							</div>
+							<div class="editor pull-right">
+								<a href="{:U('user/addressedit',array('id'=>$v['id']))}"><img src="__PUBLIC__/img/address/bianji.png"/>
+								<button class="color-333 font12 mar-r10">
+									编辑
+								</button></a>
+								<img src="__PUBLIC__/img/address/del.png"/>
+									<a href="javascript:void(0)" onclick="deleteone('{$v.id}')"><button class="font12 color-333" >
+									删除
+								</button></a>
+							</div>
+						</div>
+					</div>
+					</foreach>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="container-fluid b">
+			<div class="row">
+				<div class="col-xs-12 padd_0">
+					<a href="{:U('user/addressadd')}"><button type="button" class="save">添加新地址</button></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Bootstrap/js/bootstrap.js" ></script>
+	<script type="text/javascript">
+
+	$(function(){	
+		$('.circle').click(function(){
+			$('.circle').removeClass('active');
+			$(this).addClass('active');
+			
+		});
+	});
+	function  setdefaultone(id)	   
+    {
+		
+         var url = "{:U('user/setdefault')}";
+         $.post(url, {id:id}, function(msg){
+        	 if(msg.info == '201') {
+	             // alert(msg.url);
+	              window.location.href = msg.url;
+	             } 
+        	 else  if(msg.info == '200') 
+         {
+        	  window.location.reload();
+         } 
+         else if(msg.info == '400')
+         {
+        	 window.location.href ='/index.php/home/user/login';
+         }
+         else 
+         {
+        	 layer.open({
+     		    content: msg.info
+     		    ,skin: 'msg'
+     		    ,time: 3 //3秒后自动关闭
+     		  });
+         }
+       }, 'json').error(function(){
+    	   layer.open({
+   		    content: '网络连接错误，请稍后再试'
+   		    ,skin: 'msg'
+   		    ,time: 3 //3秒后自动关闭
+   		  });
+       
+      }); 
+       
+   }
+	 function  deleteone(id)	   
+    {
+        var url = "{:U('user/deleteaddress')}";
+         $.post(url, {id:id}, function(msg){
+         if(msg.info == '200') 
+         {
+        	  window.location.reload();
+         }
+         else if(msg.info == '400')
+         {
+        	 window.location.href ='/index.php/home/user/login';
+         }
+         else 
+         {
+        	 layer.open({
+     		    content: msg.info
+     		    ,skin: 'msg'
+     		    ,time: 3 //3秒后自动关闭
+     		  });
+         }
+       }, 'json').error(function(){
+    	   layer.open({
+   		    content: '网络连接错误，请稍后再试'
+   		    ,skin: 'msg'
+   		    ,time: 3 //3秒后自动关闭
+   		  });
+       
+      });
+       
+   }
+
+	</script>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>我的足迹</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bottomTap.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/myStyle.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/foot.css" />
+				<link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/need/layer.css"/>
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/owl/js/jquery-1.8.3.min.js" ></script>
+	</head>
+
+	<body>
+		<!--顶部标题-->
+		<div class="nav text-center">
+					<a href="#" onClick="javascript:history.back(-1);"><button type="button" class="mybtn pull-left back">
+				<img src="__PUBLIC__/img/list/right.png"/>
+			</button></a>
+			<span class="font16">我的足迹</span>
+		</div>
+
+		<!--顶部标题-->
+		<div class="container-fluid cont">
+			<div class="row">
+			
+		
+				<foreach name="foot" item="v1">
+				<foreach name="v1.good" item="v">
+ 				<div class="col-xs-12 bg-fff list mar-t10">
+					<span class="circle pull-left getcartid" id="getcartid"  vbnm="{$v1.footid}"></span>
+					<a href="{:U('good/gooddetail',array('goodsid'=>$v['id']))}" style="color:#000000">
+					<img class="goods img-rounded pull-left" src="{$v.meubleImage}" />
+					<p class="mar-b5">
+						<a class="color-333 font12" href="{:U('good/gooddetail',array('goodsid'=>$v['id']))}">
+							{$v.meubleName}
+						</a>
+					</p>
+					<p class="color-666 font15 mar-b5">
+						销量：{$v.imaginerNumber}
+					</p>
+					<p class="mar0 font15 color-ff5b01">
+						￥{$v.minPrice}
+					</p>
+					</a>
+				</div>
+				</foreach> 
+				</foreach> 
+				
+			</div>
+		</div>
+		<!--底部菜单-->
+		<div class="container-full  bg-fff toal-list">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd_0">
+				<div class="pull-left mar-t10 all-sel">
+					<span class="circle"></span>
+					<span class="font15 color-333 mar-r10">全选</span>
+				</div>
+				<div class="pull-right">
+					<button class="del bg-eb2522 font17" onclick="detefootid();">
+						删除
+					</button>
+				</div>
+			</div>
+		</div>
+		<!--底部菜单-->
+	</body>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+	
+
+	function detefootid()
+	{
+		var arr3=[];//要删除的足迹商品ID
+		  for(var i=0;i<$('.getcartid.active').length;i++){
+			  arr3.push($('.getcartid.active').eq(i).attr('vbnm'));
+		  }
+		  var id=JSON.stringify(arr3);
+		  var url = "{:U('user/deletefoot')}";
+			 $.post(url, {id:id}, function(msg){
+	            if(msg.state=='200'){
+	             window.location.reload();
+	            }
+	            else if(msg.state == '400')
+	            {
+	           	 window.location.href ='/index.php/home/user/login';
+	            } 
+	            else if(msg.state!='200'){
+	           	// alert(msg.msg);
+	           layer.open({
+	       		    content: msg.msg
+	       		    ,skin: 'msg'
+	       		    ,time: 3 //3秒后自动关闭
+	       		  }); 
+	            }
+	          }, 'json')  
+
+	}
+		var obj = $('.cont .circle');
+		for(var i = 0; i < obj.length; i++) {
+			obj.eq(i).attr('s', '0');
+		}
+		var s = true;
+		$('.toal-list .circle').click(function() {
+			if(s) {
+				$(this).addClass('active');
+				$('.cont .circle').attr('s', '1');
+				$('.cont .circle').addClass('active');
+			} else {
+				$(this).removeClass('active');
+				$('.cont .circle').attr('s', '0');
+				$('.cont .circle').removeClass('active');
+			}
+			s = !s;
+		})
+		$('.list .circle').click(function() {
+			if($(this).attr('s') == 0) {
+				$(this).addClass('active');
+				$(this).attr('s', '1');
+			} else {
+				$(this).removeClass('active')
+				$(this).attr('s', '0');
+			}
+			s = true;
+			all();
+		})
+		$('.del').click(function() {
+			$('.circle.active').parents('.list').remove();
+			$('.toal-list .circle').removeClass('active');
+		})
+
+		function all() {
+			var n = 0;
+			for(var i = 0; i < obj.length; i++) {
+				if(obj.eq(i).attr('s') == 1) {
+					n++;
+				}
+			}
+			if(n == obj.length) {
+				$('.toal-list .circle').addClass('active');
+			} else {
+				$('.toal-list .circle').removeClass('active');
+			}
+		}
+	</script>
+
+</html>

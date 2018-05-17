@@ -1,0 +1,42 @@
+.cont{
+	margin-top: 70px;
+}
+.inp{
+	width: 180px;
+	border: none;
+	background: none;
+}
+body{
+	background: #F2F2F2;
+}
+.yh{
+	width: 20px;
+	margin-right: 5px;
+}
+.gou{
+	width: 16px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -6px;
+	display: none;
+}
+.gou.active{
+	display: block;
+}
+.plus{
+	width: 20px;
+	margin-top: -4px;
+	margin-right: 5px;
+}
+.r{
+	width: 8px;
+	margin-top: -4px;
+	margin-left: 5px;
+}
+.inp{
+	width: 200px;
+}
+.back{
+	margin-top: 5px;
+}

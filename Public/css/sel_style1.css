@@ -1,0 +1,104 @@
+/*头部样式*/
+.back{
+	width: 11px;
+	height: 18px;
+	margin-right: 5px;
+}
+.t-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+}
+.logo-img{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: -20px;
+	z-index: 100;
+	border: 1px solid #e3e1e1;
+}
+.b:after{
+	content: '';
+	height: 1px;
+	width: 93%;
+	background: #e3e1e1;
+	position: absolute;
+	left: 7%;
+	bottom: 10px;
+}
+.spc{
+	display: inline-block;
+	padding:5px 10px;
+	background: #efefef;
+	color: #282828;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.number button{
+	background: #efefef;
+	padding: 5px 10px;
+}
+.number span{
+	display: inline-block;
+	background: #efefef;
+	padding: 5px 15px;
+}
+.numTit{
+	position: absolute;
+	top: 6px;
+}
+.bottom{
+	width: 100%;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.ok button{
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	background: none;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.model{
+	display: none;
+	background: #fff;
+	position: relative;
+	top: -150px;
+	z-index: 100;
+	border-top: 1px solid #e3e1e1;
+}
+.model1{
+	display: none;
+	background: #fff;
+	position: relative;
+	top: -150px;
+	z-index: 100;
+	border-top: 1px solid #e3e1e1;
+}
+.bg-ffc98a{
+	background: #ffc98a;
+}
+.bg-99cc33{
+	background: #99cc33;
+}
+.spc.active{
+	background: #E0C321 !important;
+	color: #fff;
+}
+.close{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+.close img{
+	width:16px;
+}

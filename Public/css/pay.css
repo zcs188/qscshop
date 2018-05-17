@@ -1,0 +1,46 @@
+body{
+	background: #F2F2F2;
+}
+.cont{
+	margin-top: 50px;
+	background: #fff;
+}
+.wx{
+	width: 33px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.circle{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	vertical-align: middle;
+	background: #fff;
+	margin-top: 6px;
+}
+.circle.active{
+	background:#fff url(../img/list/gou.png) no-repeat;
+	background-size: 18px 18px; 
+	background-position: center center;
+	border: none;
+}
+.t-all{
+	vertical-align: middle;
+}
+.toal-list{
+	height: 51px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.toal-list .set{
+	border: none;
+	background: #99cc33;
+	color: #fff;
+	width: 100px;
+	height: 51px;
+	font-size: 17px;
+	margin-left: 10px;
+}

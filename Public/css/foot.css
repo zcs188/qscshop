@@ -1,0 +1,95 @@
+body{
+	background: #F2F2F2;
+}
+.nav{
+	border-bottom: 1px solid #F2F2F2;
+	z-index: 110;
+}
+.nav .mybtn{
+	position: relative;
+	top: 4px;
+	margin-right: 15px;
+}
+.nav span{
+	line-height: 30px;
+}
+.back{
+	margin-top: 2px;
+}
+.back img{
+	width: 10px;
+	height: 20px;
+	margin-left: 7px;
+}
+/*头部*/
+.circle{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin: 10px;
+	background: #fff;
+}
+.circle.active{
+	background:#fff url(../img/list/gou.png) no-repeat;
+	background-size: 18px 18px; 
+	background-position: center center;
+	border: none;
+}
+.list{
+	padding: 10px 0;
+}
+.list .circle{
+	margin-top: 40px;
+}
+.list .goods{
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.list p{
+	max-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*white-space: nowrap;*/
+}
+.list .circle-list{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+}
+.cont{
+	margin-bottom: 51px;
+	margin-top: 50px;
+}
+/*底部*/
+.toal-list{
+	height: 51px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.toal-list.active{
+	display: block;
+}
+.toal-list .set{
+	border: none;
+	background: #99cc33;
+	color: #fff;
+	width: 100px;
+	height: 51px;
+	font-size: 15px;
+	margin-left: 10px;
+}
+.toal-list .del{
+	border: none;
+	color: #fff;
+	width: 100px;
+	height: 51px;
+	font-size: 15px;
+	margin-left: 10px;
+}

@@ -1,0 +1,64 @@
+body{
+	background: #F2F2F2;
+}
+/*头部样式*/
+.nav{
+	border-bottom: 1px solid #f2f2f2;
+}
+.nav .mybtn{
+	position: relative;
+	top: 4px;
+	margin-right: 15px;
+}
+.nav span{
+	line-height: 30px;
+}
+.back img{
+	width: 10px;
+	height: 20px;
+	margin-left: 7px;
+}
+/*头部样式*/
+.f:after{
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #669900;
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+}
+.t-infor{
+	border-bottom: 1px solid #f2f2f2;
+}
+.bor{
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+}
+/*底部*/
+.bottom1{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	z-index: 100;
+}
+.btn1{
+	width: 100%;
+	height: 45px;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+}
+.pic1{
+	width: 18px;
+	margin-bottom: 2px;
+}
+.product{
+	display: none;
+}
+.product.active{
+	display: block;
+}

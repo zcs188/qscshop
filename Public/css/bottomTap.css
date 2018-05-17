@@ -1,0 +1,72 @@
+.nav .search{
+	background: #f2f2f2;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid #EBEBEB;
+	width: 60%;
+	margin-left: 10%;
+	background:#F2F2F2 url(../img/classify/bg-input.png) no-repeat center center;
+	background-size: 72px 14px;
+}
+.nav .search.active{
+	background:#F2F2F2;
+}
+.mycar{
+	width: 26px;
+	margin-right: 15px;
+	position: relative;
+	top: -1px;
+}
+.nav{
+	height: 50px;
+	border-bottom: 1px solid #EBEBEB;
+	padding-top: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 110;
+	background: #fff;
+}
+/*头部*/
+
+
+
+/*底部选项卡*/
+.bottom{
+	height: 52px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 100;
+	padding-top: 10px;
+}
+.bottom p{
+	font-size:10px;
+}
+.bottom .other{
+	width: 18.1%;
+	float: left;
+}
+.other img{
+	width: 19px;
+	margin: auto;
+}
+.other p{
+	color: #4C4C4C;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.bottom .myplus{
+	width: 27.6%;
+	float: left;
+	position: relative;
+ 	top: -3px; 
+}
+.myplus img{
+	width: 40px;
+}

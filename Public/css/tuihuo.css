@@ -1,0 +1,36 @@
+body{
+	background: #F2F2F2;
+}
+.back{
+	margin-top: 6px;
+}
+.cont{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+textarea{
+	width: 100%;
+	height: 120px;
+	border: none;
+	resize: none;
+	margin-top: 15px;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+}
+.tj{
+	width: 80px;
+	margin-top: 15px;
+}
+.b{
+	position: fixed;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 45px;
+}
+.b button{
+	width: 100%;
+	height: 45px;
+	background: #669900;
+	line-height: 45px;
+}

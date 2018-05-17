@@ -1,0 +1,120 @@
+body{
+	background: #f2f2f2;
+}
+.tit{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	background: #fff;
+}
+.classify div.active:after{
+	content: '';
+	height: 2px;
+	width: 80%;
+	background: #669900;
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+}
+.classify div.active{
+	color: #669900 !important;
+}
+.cont{
+	margin-top: 101px;
+}
+
+/*搜索*/
+
+.sale span{
+	display: inline-block;
+	height: 100%;
+	width: 60px;
+	padding: 10px 0;
+	margin-bottom: 5px;
+}
+.sale span.active{
+	border-bottom: 2px solid #99cc33;
+	color:#99cc33;
+}
+
+.f1 .jiantou{
+	width: 6px;
+	height: 12px;
+	display: inline-block;
+	background: url(../img/car/right.png);
+	background-size:100% 100%;
+	vertical-align:middle;
+	margin-top: -3px;
+}
+.f1 .circle{
+	margin-left: -6px;
+}
+.f1 .logo{
+	width: 16px;
+	height: 16px;
+}
+.f1 button{
+	border: none;
+	background: none;
+	margin-top: 10px;
+}
+.list{
+	padding: 10px 0;
+}
+.list .circle{
+	margin-top: 40px;
+}
+.list img{
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.list p{
+	max-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*white-space: nowrap;*/
+}
+.list .circle-list{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+}
+/*.total{
+	padding: 0 !important;
+}*/
+.total{
+	position: fixed;
+	bottom: 50px;
+	width: 100%;
+}
+.total .set{
+	border: none;
+	background: #99cc33;
+	color: #fff;
+	padding: 15px;
+	font-size: 15px;
+}
+.list{
+	margin-bottom: 15px;
+}
+.back{
+	position: absolute;
+	left: 5px;
+	top: 12px;
+}
+.back img{
+	width: 10px;
+	height: 20px;
+	margin-left: 7px;
+}
+.cont-list{
+	display: none;
+}
+.cont-list.active{
+	display: block;
+}
